@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat';
 }
 html , body {
     height: 100%;
@@ -28,11 +29,76 @@ html , body {
 }
 #nav h4 {
     font-size: 20px;
+    font-weight: 600;
 }
 #nav i {
     background-color: black;
     color: white;
     padding: 10px;
-    font-size: 15px;
+    font-size: 20px;
     border-radius: 50%;
+    font-weight: 500;
+}
+
+
+
+#center {
+    width: 100%;
+    /* background-color: red; */
+    padding: 40px 80px;
+}
+#center h1 {
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 85px;
+}
+#center-in {
+    height: 200px;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 50px;    
+    display: flex;
+    justify-content: space-between;
+}
+#center-in p {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+}
+#right {
+    width: 20%;
+}
+.elem {
+    /* background-color: yellow; */
+    padding: 20px 0;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.elem i {
+    font-size: 25px;
+    font-weight: 500;
+    opacity: 0;
+}
+.elem a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+}
+.elem:hover i{
+    opacity: 1;
+}
+.elem:hover a {
+    text-decoration: underline;
+}
+
+
+#bottom {
+    width: 100%;
+    height: 30%;
+    background: url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/202405/aditi-rao-hydari-060242308-16x9_0.jpg?VersionId=XHbFdg3CuBF109uEd53ZMSLtdAtlCuEy&size=690:388);
+    /* background-size: cover; */
+    /* background-position: center; */
 }
