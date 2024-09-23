@@ -1,124 +1,177 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
 }
-html , body {
-    height: 100%;
-    width: 100%;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
 
 #main {
-    width: 100%;
-    height: 100%;
-    background-color: #dadada;
+  width: 100%;
+  height: 100%;
+  background-color: #dadada;
 }
-
-
 
 #nav {
-    /* background-color: red; */
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 20px;
-    padding: 0px 40px;
+  /* background-color: red; */
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 40px;
 }
 #nav h4 {
-    font-size: 20px;
-    font-weight: 600;
+  font-size: 20px;
+  font-weight: 600;
 }
 #nav i {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    font-size: 20px;
-    border-radius: 50%;
-    font-weight: 500;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+  font-weight: 500;
 }
-
-
 
 #center {
-    width: 100%;
-    /* background-color: red; */
-    padding: 40px 80px;
+  width: 100%;
+  /* background-color: red; */
+  padding: 40px 80px;
 }
 #center h1 {
-    font-size: 5vw;
-    font-weight: 500;
-    line-height: 6vw;
+  font-size: 5vw;
+  font-weight: 500;
+  line-height: 6vw;
 }
 #center-in {
-    height: 200px;
-    width: 100%;
-    /* background-color: red; */
-    margin-top: 50px;    
-    display: flex;
-    justify-content: space-between;
+  height: 200px;
+  width: 100%;
+  /* background-color: red; */
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 #center-in p {
-    font-size: 1.1vw;
-    font-weight: 600;
-    line-height: 1.7vw;
+  font-size: 1.1vw;
+  font-weight: 600;
+  line-height: 1.7vw;
 }
 #right {
-    width: 20%;
+  width: 20%;
 }
 .elem {
-    /* background-color: yellow; */
-    padding: 20px 0;
-    border-top: 2px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  /* background-color: yellow; */
+  padding: 20px 0;
+  border-top: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .elem i {
-    font-size: 25px;
-    font-weight: 500;
-    opacity: 0;
+  font-size: 25px;
+  font-weight: 500;
+  opacity: 0;
 }
 .elem a {
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-    font-size: 20px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
 }
-.elem:hover i{
-    opacity: 1;
+.elem:hover i {
+  opacity: 1;
 }
 /* .elem:hover a {
     text-decoration: underline;
 } */
 
-
 #bottom {
-    width: 100%;
-    height: 50%;
-    background: url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/202405/aditi-rao-hydari-060242308-16x9_0.jpg?VersionId=XHbFdg3CuBF109uEd53ZMSLtdAtlCuEy&size=690:388);
-    background-size: cover;
-    background-position: 0 30%;
+  width: 100%;
+  height: 50%;
+  background: url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/202405/aditi-rao-hydari-060242308-16x9_0.jpg?VersionId=XHbFdg3CuBF109uEd53ZMSLtdAtlCuEy&size=690:388);
+  background-size: cover;
+  background-position: 0 30%;
 }
-
 
 /* ADDING RESPONSIVENES TO THE WEBPAGE */
 
+@media (max-width: 600px) {
+  #nav {
+    height: 55px;
+    gap: 15px;
+    padding: 0px 25px;
+  }
+  #nav h4 {
+    font-size: 12px;
+    font-weight: 600;
+    /* display: none; */
+  }
+  #nav i {
+    padding: 5px;
+    font-size: 11px;
+  }
 
-@media (max-width:600px) {
-    #nav {
-        height: 55px;
-        gap: 15px;
-        padding: 0px 25px;
-    }
-    #nav h4 {
-        font-size: 12px;
-        font-weight: 600;
-    }
-    #nav i {
-        padding: 5px;
-        font-size: 12px;
-    }
+  #center {
+    width: 100%;
+    /* background-color: red; */
+    padding: 15px 20px;
+  }
+  #center h1 {
+    font-size: 10vw;
+    font-weight: 500;
+    line-height: 11.5vw;
+  }
+  #center-in {
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 15px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #center-in p {
+    /* background-color: red; */
+    font-size: 3.1vw;
+    font-weight: 600;
+    line-height: 3.9vw;
+  }
+  #right {
+    /* background-color: red; */
+    width: 100%;
+  }
+  .elem {
+    /* background-color: yellow; */
+    padding: 10px 0;
+    border-top: 1.5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .elem i {
+    font-size: 19px;
+    font-weight: 500;
+    opacity: 1;
+  }
+  .elem a {
+    text-decoration: none;
+    color: #303030;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+
+  #bottom {
+    width: 100%;
+    height: 36%;
+    background: url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/202405/aditi-rao-hydari-060242308-16x9_0.jpg?VersionId=XHbFdg3CuBF109uEd53ZMSLtdAtlCuEy&size=690:388);
+    background-size: cover;
+    background-position: center;
+  }
 }
