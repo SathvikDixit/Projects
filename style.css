@@ -48,9 +48,9 @@ html , body {
     padding: 40px 80px;
 }
 #center h1 {
-    font-size: 80px;
+    font-size: 5vw;
     font-weight: 500;
-    line-height: 85px;
+    line-height: 6vw;
 }
 #center-in {
     height: 200px;
@@ -61,9 +61,9 @@ html , body {
     justify-content: space-between;
 }
 #center-in p {
-    font-size: 22px;
+    font-size: 1.1vw;
     font-weight: 600;
-    line-height: 32px;
+    line-height: 1.7vw;
 }
 #right {
     width: 20%;
@@ -90,9 +90,9 @@ html , body {
 .elem:hover i{
     opacity: 1;
 }
-.elem:hover a {
+/* .elem:hover a {
     text-decoration: underline;
-}
+} */
 
 
 #bottom {
@@ -101,4 +101,24 @@ html , body {
     background: url(https://akm-img-a-in.tosshub.com/indiatoday/images/story/202405/aditi-rao-hydari-060242308-16x9_0.jpg?VersionId=XHbFdg3CuBF109uEd53ZMSLtdAtlCuEy&size=690:388);
     background-size: cover;
     background-position: 0 30%;
+}
+
+
+/* ADDING RESPONSIVENES TO THE WEBPAGE */
+
+
+@media (max-width:600px) {
+    #nav {
+        height: 55px;
+        gap: 15px;
+        padding: 0px 25px;
+    }
+    #nav h4 {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    #nav i {
+        padding: 5px;
+        font-size: 12px;
+    }
 }
